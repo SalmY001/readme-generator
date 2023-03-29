@@ -1,28 +1,64 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  const badges = {
+    MIT: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
+    ISC: '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)',
+    GNUGPLv3: '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
+  }
+  if (license!=="none") {
+    return badges[license]
+  }
+  return ""
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  const badgesLink = {
+    MIT: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
+    ISC: '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)',
+    GNUGPLv3: '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
+  }
+  //return badges[license]
+  if (license!=="none") {
+    return badgesLink[license]
+  }
+  return ""
+  }
+  
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  const section = {
+    MIT: '[![License: MIT]](https://opensource.org/licenses/MIT)',
+    ISC: '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)',
+    GNUGPLv3: '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
+  }
+  //Check if no license exists
+  if (license!=="none") {
+    return section[license]
+  }
+  return ""
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return 
+  const fileContent = 
+  //return 
   `# ${data.title}
 
+  ${renderLicenseBadge(data.license)}
+
   ## Table of Contents
-  -[Project Description](#Description)
-  -[Installation](#Installation)
-  -[Usage](#Usage)
-  -[Licence](#License)
-  -[Contributions](#Contributing)
-  -[Tests](#Tests)
-  -[Questions](#Questions)
+  - [Project Description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [Licence](#License)
+  - [Contributions](#Contributing)
+  - [Tests](#Tests)
+  - [Questions](#Questions)
 
   ## Description
   ${data.description}
@@ -32,9 +68,13 @@ function generateMarkdown(data) {
 
   ## Usage
   ${data.usage}
+  
 
   ## License
-  ${data.license}
+  This project is under the ${data.license} license:
+  ${renderLicenseLink(data.license)}
+  ${renderLicenseSection(data.license)}
+
 
   ## Contributors
   ${data.contributing}
@@ -43,9 +83,12 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  ${data.email}
-  ${data.github}
+  If you have any questions or concerns you can contact me on email: ${data.email}
+
+  You can find more of my work at: ${data.github} (https://github.com/${data.github})
 `;
+console.log(fileContent)
+return fileContent
 }
 
 module.exports = generateMarkdown;

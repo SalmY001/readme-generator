@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer')
 const generateMarkdown = require('./generateMarkdown')
+const fs = require("fs") 
 // TODO: Create an array of questions for user input
 const questions = inquirer.prompt( [
     {
@@ -32,7 +33,7 @@ const questions = inquirer.prompt( [
         type: 'list',
         name: 'license',
         message: 'Project license',
-        choices: ['MIT','ISC', 'GNUPLv3'],
+        choices: ['MIT','ISC', 'GNUGPLv3', 'none'],
         filter(value) {
             //return val.toLowerCase();
             return value;
@@ -50,6 +51,7 @@ const questions = inquirer.prompt( [
     },
     {
         type: 'input',
+
         name: 'email',
         message: 'Project questions (enter email address)',
     },
@@ -70,9 +72,14 @@ function init() {
     //return questions.prompt(questions)
     return questions
     .then((data) => {
-        const fileMarkdown = generateMarkdown
-        console.log(fileMarkdown)
-        return data
+        console.log(data)
+        // create file storage
+        fs.writeFileSync('./README.md',generateMarkdown(data),function(err){
+            if(err)throw err
+        })
+        //const fileMarkdown = await generateMarkdown(data)
+        //await console.log(fileMarkdown)
+        //return fileMarkdown
 
         //console.log(data)
         //return data

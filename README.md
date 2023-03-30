@@ -20,7 +20,7 @@
   npm i inquirer
 
   ## Usage
-  See walthrough video
+  See walkthrough video
   
 
   ## License

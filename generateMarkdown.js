@@ -73,19 +73,24 @@ function generateMarkdown(data) {
   This project is under the ${data.license} license:
   ${renderLicenseSection(data.license)}
 
-  Please refer to license in the repo
+  Please refer to license in the repo.
 
 
   ## Contributors
+  Include people who have contributed to the project.
+
+  Sources viewed to help in the development of the app include: 
   ${data.contributing}
 
+
   ## Tests
+  To run tests, use the command: npm run test
   ${data.tests}
 
   ## Questions
-  If you have any questions or concerns you can contact me on email: ${data.email}
+  If you have any questions about the repo, you can contact me on email: ${data.email}
 
-  You can find more of my work at: ${data.github} (https://github.com/${data.github})
+  You can also open an issue to contact me or find more of my work at: ${data.github} (https://github.com/${data.github})
 `;
 console.log(fileContent)
 return fileContent

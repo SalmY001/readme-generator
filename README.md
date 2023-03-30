@@ -6,7 +6,7 @@
   - [Project Description](#Description)
   - [Installation](#Installation)
   - [Usage](#Usage)
-  - [Licence](#License)
+  - [License](#License)
   - [Contributors](#Contributors)
   - [Tests](#Tests)
   - [Questions](#Questions)
@@ -16,7 +16,7 @@
 
   ## Installation
   To install the required dependencies, run the following command: 
-  
+
   npm i inquirer
 
   ## Usage

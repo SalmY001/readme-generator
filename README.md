@@ -20,7 +20,7 @@
   npm i inquirer
 
   ## Usage
-  See walkthrough video
+  See walthrough video
   
 
   ## License
@@ -38,6 +38,7 @@
 
   ## Tests
   To run tests, use the command: 
+  
   npm run test
 
   ## Questions

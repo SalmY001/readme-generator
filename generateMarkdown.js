@@ -64,6 +64,7 @@ function generateMarkdown(data) {
 
   ## Installation
   To install the required dependencies, run the following command: 
+  
   ${data.installation}
 
   ## Usage
@@ -79,6 +80,7 @@ function generateMarkdown(data) {
 
   ## Contributors
   Sources viewed to help in the development of the app include: 
+
   ${data.contributing}
 
 

@@ -16,7 +16,8 @@
 
   ## Installation
   To install the required dependencies, run the following command: 
-  npm i inquier
+  
+  npm i inquirer
 
   ## Usage
   See walkthrough video
@@ -31,6 +32,7 @@
 
   ## Contributors
   Sources viewed to help in the development of the app include: 
+
   https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba -Markdown License, https://www.youtube.com/watch?v=QFV7jzu8mKw - Assistian, https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository - Adding a license to a respository
 
 

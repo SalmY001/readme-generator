@@ -1,4 +1,4 @@
-# README cli generator
+# README CLI generator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -8,7 +8,7 @@
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Licence](#License)
-- [Contributors](#Contributing)
+- [Contributors](#Contributors)
 - [Tests](#Tests)
 - [Questions](#Questions)
 
@@ -33,7 +33,7 @@ Please refer to license in the repo
 
 ## Contributors
 
-https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba -Markdown License Badges, https://www.youtube.com/watch?v=QFV7jzu8mKw - Assistian,https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository - Adding a license to a respository
+https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba -Markdown License Badges, https://www.youtube.com/watch?v=QFV7jzu8mKw - Assistian, https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository - Adding a license to a respository
 
 ## Tests
 

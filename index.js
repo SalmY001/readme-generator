@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
+//Include packages needed for this application
 const inquirer = require('inquirer')
 const generateMarkdown = require('./generateMarkdown')
 const fs = require("fs") 
-// TODO: Create an array of questions for user input
+//Create an array of questions for user input
 const questions = inquirer.prompt( [
     {
         type: 'input',
@@ -13,11 +13,6 @@ const questions = inquirer.prompt( [
         type: 'input',
         name: 'description',
         message: 'Project description',
-    },
-    {
-        type: 'input',
-        name: 'contents',
-        message: 'Table of contents',
     },
     {
         type: 'input',
@@ -35,7 +30,6 @@ const questions = inquirer.prompt( [
         message: 'Project license',
         choices: ['MIT','ISC', 'GNUGPLv3', 'none'],
         filter(value) {
-            //return val.toLowerCase();
             return value;
         }
     },
@@ -63,26 +57,20 @@ const questions = inquirer.prompt( [
 ]);
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+//function writeToFile(fileName, data) {
     
-}
+//}
 
-// TODO: Create a function to initialize app
+// Create a function to initialize app
 function init() {
-    //return questions.prompt(questions)
+    //ask prompt(questions)
     return questions
     .then((data) => {
         console.log(data)
-        // create file storage
+        // write README file
         fs.writeFileSync('./README.md',generateMarkdown(data),function(err){
             if(err)throw err
         })
-        //const fileMarkdown = await generateMarkdown(data)
-        //await console.log(fileMarkdown)
-        //return fileMarkdown
-
-        //console.log(data)
-        //return data
     })
     .catch((error) => {
         console.log(error)

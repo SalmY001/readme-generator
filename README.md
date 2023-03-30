@@ -15,7 +15,8 @@
   Example of how to create a README.md in the command line
 
   ## Installation
-  npm i inquirer
+  To install the required dependencies, run the following command: 
+  npm i inquier
 
   ## Usage
   See walkthrough video
@@ -29,14 +30,12 @@
 
 
   ## Contributors
-  Include people who have contributed to the project.
-
   Sources viewed to help in the development of the app include: 
   https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba -Markdown License, https://www.youtube.com/watch?v=QFV7jzu8mKw - Assistian, https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository - Adding a license to a respository
 
 
   ## Tests
-  To run tests, use the command: npm run test
+  To run tests, use the command: 
   npm run test
 
   ## Questions

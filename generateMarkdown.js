@@ -63,6 +63,7 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Installation
+  To install the required dependencies, run the following command: 
   ${data.installation}
 
   ## Usage
@@ -77,14 +78,12 @@ function generateMarkdown(data) {
 
 
   ## Contributors
-  Include people who have contributed to the project.
-
   Sources viewed to help in the development of the app include: 
   ${data.contributing}
 
 
   ## Tests
-  To run tests, use the command: npm run test
+  To run tests, use the command: 
   ${data.tests}
 
   ## Questions

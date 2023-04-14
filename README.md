@@ -46,6 +46,6 @@ https://user-images.githubusercontent.com/80605132/228903779-669f15a9-a6cb-4c6b-
   npm run test
 
   ## Questions
-  If you have any questions about the repo, you can contact me on email: someone@gmail.com
+  If you have any questions about the repo, you can contact me on email: salmy75987@gmail.com
 
   You can also open an issue to contact me or find more of my work at: SALMY001 (https://github.com/SALMY001)

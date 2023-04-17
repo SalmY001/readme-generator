@@ -20,10 +20,22 @@
   npm i inquirer
 
   ## Usage
-  See walkthrough video
+  See walkthrough video which includes the following steps to create the README.md:
+  
+  1. Enter project title
+  2. Enter project description
+  3. Enter commands to install dependencies
+  4. Select a license from the dropdown list
+  5. Include contributors who worked on the project and any resources used to help build the project
+  6. Enter commands to run tests
+  7. Enter contact details for questions about the repo
+  
+ 
   
 
-https://user-images.githubusercontent.com/80605132/228903779-669f15a9-a6cb-4c6b-acf8-cdcb50952237.mp4
+https://drive.google.com/file/d/1UnAjV8KK7EPLoEIQ2J-g3VCj9f0O13c2/view.
+
+
 
 
 

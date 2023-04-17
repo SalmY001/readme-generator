@@ -20,7 +20,7 @@
   npm i inquirer
 
   ## Usage
-  See walkthrough video which includes the following steps to create the README.md:
+  The following steps indicate how to create the README.md:
   
   1. Enter project title
   2. Enter project description
@@ -33,7 +33,6 @@
  
   
 
-https://drive.google.com/file/d/1UnAjV8KK7EPLoEIQ2J-g3VCj9f0O13c2/view.
 
 
 

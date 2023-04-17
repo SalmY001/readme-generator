@@ -22,13 +22,14 @@
   ## Usage
   The following steps indicate how to create the README.md:
   
-  1. Enter project title
-  2. Enter project description
-  3. Enter commands to install dependencies
-  4. Select a license from the dropdown list
-  5. Include contributors who worked on the project and any resources used to help build the project
-  6. Enter commands to run tests
-  7. Enter contact details for questions about the repo
+  1. To start the application enter the words "node index.js" into the terminal
+  2. Enter project title
+  3. Enter project description
+  4. Enter commands to install dependencies
+  5. Select a license from the dropdown list
+  6. Include contributors who worked on the project and any resources used to help build the project
+  7. Enter commands to run tests
+  8. Enter contact details for questions about the repo
   
  
   
